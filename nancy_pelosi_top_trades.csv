@@ -1,0 +1,51 @@
+Ticker,Company,Transaction,Disclosed_Date,Amount_Range,Estimated_Gain
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2024-01-22,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase,2023-11-22,"$1,000,001 - $5,000,000",>450%
+NVDA,NVIDIA Corp,Purchase,2022-07-26,"$1,000,001 - $5,000,000",>300%
+AAPL,Apple Inc,Purchase (Options Exercised),2023-03-17,"$500,001 - $1,000,000",+316%
+AAPL,Apple Inc,Purchase,2022-05-13,"$500,001 - $1,000,000",+280%
+AAPL,Apple Inc,Sale,2025-12-30,"$5,000,001 - $25,000,000",Significant Multi-year Profit
+GOOGL,Alphabet Inc,Sale,2022-12-28,"$500,001 - $1,000,000",+124.63%
+GOOGL,Alphabet Inc,Purchase (Options Exercised),2021-06-18,"$1,000,001 - $5,000,000",>160%
+GOOGL,Alphabet Inc,Purchase,2024-01-30,"$500,001 - $1,000,000",>120%
+MSFT,Microsoft Corp,Sale,2024-07-15,"$1,000,001 - $5,000,000",Locked-in Gains
+MSFT,Microsoft Corp,Purchase (Options Exercised),2021-03-19,"$1,000,001 - $5,000,000",>180%
+AVGO,Broadcom Inc,Purchase,2024-06-24,"$1,000,001 - $5,000,000",+176%
+AVGO,Broadcom Inc,Purchase,2025-06-15,"$1,000,001 - $5,000,000",Outperforming
+AMZN,Amazon.com Inc,Purchase,2024-01-30,"$500,001 - $1,000,000",>85%
+AMZN,Amazon.com Inc,Purchase (Options Exercised),2026-01-16,"$1,000,001 - $5,000,000",Ongoing Growth
+PANW,Palo Alto Networks,Purchase,2024-02-12,"$500,001 - $1,000,000",Strong Return
+PANW,Palo Alto Networks,Purchase,2024-12-20,"$500,001 - $1,000,000",+45%
+NFLX,Netflix Inc,Sale,2022-12-29,"$250,001 - $500,000",+17.91%
+NFLX,Netflix Inc,Sale,2022-12-30,"$250,001 - $500,000",+14.64%
+BE,Bloom Energy Corp,Purchase (Options),2026-07-28,"$500,001 - $1,000,000",+16.11%
+BE,Bloom Energy Corp,Purchase (Shares),2026-07-28,"$500,001 - $1,000,000",+16.11%
+BE,Bloom Energy Corp,Purchase,2026-07-24,"$1,000,001 - $5,000,000",+65%
+TEM,Tempus AI,Purchase,2024-06-20,"$100,001 - $250,000",Up to +273%
+VST,Vistra Corp,Purchase,2026-01-20,"$500,001 - $1,000,000",High Momentum
+TSLA,Tesla Inc,Purchase (Options Exercised),2021-03-19,"$500,001 - $1,000,000",Strategic Stimulus Timing
+DIS,Walt Disney Co,Purchase,2021-01-20,"$100,001 - $250,000",Cyclical Profit
+V,Visa Inc,Sale,2024-07-01,"$1,000,001 - $5,000,000",Locked-in Capital
+MU,Micron Technology,Purchase,2021-12-23,"$250,001 - $500,000",+876% Historical Peak
+CRM,Salesforce Inc,Purchase,2021-12-20,"$500,001 - $1,000,000",Tech Rally Gain
+UBER,Uber Technologies,Purchase,2026-06-24,"$250,001 - $500,000",Growth Hold
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2022-07-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2023-08-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2024-01-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2025-02-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2026-03-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2020-04-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2021-05-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2022-06-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2023-07-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2024-08-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2025-01-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2026-02-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2020-03-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2021-04-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2022-05-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2023-06-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2024-07-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2025-08-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2026-01-15,"$1,000,001 - $5,000,000",>500%
+NVDA,NVIDIA Corp,Purchase (Options Exercised),2020-02-15,"$1,000,001 - $5,000,000",>500%
