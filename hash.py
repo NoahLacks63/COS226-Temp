@@ -26,7 +26,7 @@ def bad_pelosi_hash(string):
         ascii_ticker = ascii % len(PELOSI_TRADE_MATRIX)
 
         result += str(ascii * int(PELOSI_TRADE_MATRIX[ascii_ticker]["pct_gain"] * 100))
-    return int(result) % 32749
+    return int(result[::len(result)]) % 32749
 
 def good_pelosi_hash(s):
     """
@@ -43,6 +43,6 @@ def good_pelosi_hash(s):
 
     for i in range(len(s)):
         ascii = ord(s[i])
-        result += (result * 7 * int(PELOSI_TRADE_MATRIX[ascii % len(PELOSI_TRADE_MATRIX)]["pct_gain"] * 100) + ascii) | 1
+        result += result * (7+i) + ascii
 
     return result % 32749

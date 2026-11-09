@@ -4,6 +4,9 @@ import hash
 from linked_list import LinkedList
 import parse
 
+TITLE = "movie_title"
+QUOTE = "quote"
+
 def main():
     """
     According to all known laws of aviation, there is no way a bee should be able to fly.
@@ -1373,13 +1376,17 @@ def main():
     # Parse the CSV file into a list of dictionaries
     data = parse.parse_csv()
 
-    test_linked_hash(data, hash.bad_pelosi_hash)
-    test_linked_hash(data, hash.good_pelosi_hash)
+    test_linked_hash(data, hash.bad_pelosi_hash, TITLE)
+    test_linked_hash(data, hash.good_pelosi_hash, TITLE)
 
-def linked_hash(movies, function):
+    test_linked_hash(data, hash.bad_pelosi_hash, QUOTE)
+    test_linked_hash(data, hash.good_pelosi_hash, QUOTE)
+
+
+def linked_hash(movies, function, key):
     linked_arr = [None] * 32749
     for movie in movies:
-        i = function(movie["movie_title"])
+        i = function(movie[key])
         if linked_arr[i] is None:
             linked_arr[i] = LinkedList(movie)
         else:
@@ -1396,9 +1403,9 @@ def wasted_space(arr):
 def collisions(arr, data):
     return len(data) - (32749 - wasted_space(arr))
 
-def test_linked_hash(arr, function):
+def test_linked_hash(arr, function, key):
     start = time.perf_counter()
-    hashed = linked_hash(arr, function)
+    hashed = linked_hash(arr, function, key)
     print(f"Time taken: {time.perf_counter() - start}")
 
     print("Number of collisions: ", f"{collisions(hashed, arr)} : {collisions(hashed, arr) / len(arr) * 100:.2f}%", )
