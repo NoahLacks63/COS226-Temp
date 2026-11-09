@@ -1,6 +1,7 @@
 import time
 
 import hash
+from linear_probe import LinearProbe
 from linked_list import LinkedList
 import parse
 
@@ -1382,6 +1383,11 @@ def main():
     test_linked_hash(data, hash.bad_pelosi_hash, QUOTE)
     test_linked_hash(data, hash.good_pelosi_hash, QUOTE)
 
+    test_probed_hash(data, hash.bad_pelosi_hash, TITLE)
+    test_probed_hash(data, hash.good_pelosi_hash, TITLE)
+
+    test_probed_hash(data, hash.bad_pelosi_hash, QUOTE)
+    test_probed_hash(data, hash.good_pelosi_hash, QUOTE)
 
 def linked_hash(movies, function, key):
     linked_arr = [None] * 32749
@@ -1392,6 +1398,14 @@ def linked_hash(movies, function, key):
         else:
             linked_arr[i].append(movie)
     return linked_arr
+
+def probed_hash(movies, function, key):
+    probe = LinearProbe(32749)
+    collisions = 0
+
+    for movie in movies:
+        collisions += probe.insert(function(movie[key]))
+    return probe.get_list(), collisions
 
 def wasted_space(arr):
     count = 0
@@ -1409,6 +1423,14 @@ def test_linked_hash(arr, function, key):
     print(f"Time taken: {time.perf_counter() - start}")
 
     print("Number of collisions: ", f"{collisions(hashed, arr)} : {collisions(hashed, arr) / len(arr) * 100:.2f}%", )
+    print("Number of wasted slots: ", f"{wasted_space(hashed)} : {wasted_space(hashed) / len(hashed) * 100:.2f}%", )
+
+def test_probed_hash(arr, function, key):
+    start = time.perf_counter()
+    hashed, collisions = probed_hash(arr, function, key)
+    print(f"Time taken: {time.perf_counter() - start}")
+
+    print("Number of collisions: ", f"{collisions} : {collisions / len(arr) * 100:.2f}%", )
     print("Number of wasted slots: ", f"{wasted_space(hashed)} : {wasted_space(hashed) / len(hashed) * 100:.2f}%", )
 
 if __name__ == "__main__":

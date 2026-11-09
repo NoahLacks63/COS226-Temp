@@ -4,8 +4,13 @@ class LinearProbe:
         self.table = [None] * size
 
     def insert(self, index, value):
+        collisions = 0
         while self.table[index] is not None:
-            if self.table[index] == key:
-                break
             index = (index + 1) % self.size
-        self.table[index] = (key, value)
+            collisions += 1
+        self.table[index] = value
+        
+        return collisions
+
+    def get_list(self):
+        return self.table
