@@ -30,6 +30,6 @@ def good_pelosi_hash(s):
 
     for i in range(len(s)):
         ascii = ord(s[i])
-        result += result * 31 + ascii
+        result += result * (7**i) + ascii
 
     return result % 32749
