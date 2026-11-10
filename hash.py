@@ -9,9 +9,6 @@ PELOSI_TRADE_MATRIX = [
 
 def bad_pelosi_hash(string):
     """
-    Hashes a string by turning it into an ascii value, then multiplying it by 
-    the percentage gain of the trade at the index `ascii % len(PELOSI_TRADE_MATRIX)`.
-
     Parameters:
         string (str): The input string to hash.
 
@@ -29,20 +26,10 @@ def bad_pelosi_hash(string):
     return int(result[::len(result)]) % 32749
 
 def good_pelosi_hash(s):
-    """
-    Hashes a string by turning it into an ascii value, then multiplying it by 
-    the percentage gain of the trade at the index `ascii % len(PELOSI_TRADE_MATRIX)`.
-
-    Parameters:
-        s (str): The input string to hash.
-
-    Returns:
-        int: The hashed integer.
-    """
     result = 0
 
     for i in range(len(s)):
         ascii = ord(s[i])
-        result += result * (i**7) + ascii
+        result += ascii + i
 
-    return result % 32749
+    return result % 32749 

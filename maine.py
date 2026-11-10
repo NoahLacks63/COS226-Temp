@@ -1377,16 +1377,24 @@ def main():
     # Parse the CSV file into a list of dictionaries
     data = parse.parse_csv()
 
+    print("Bad Linked Title:")
     test_linked_hash(data, hash.bad_pelosi_hash, TITLE)
+    print("Good Linked Title:")
     test_linked_hash(data, hash.good_pelosi_hash, TITLE)
 
+    print("Bad Linked Quote:")
     test_linked_hash(data, hash.bad_pelosi_hash, QUOTE)
+    print("Good Linked Quote:")
     test_linked_hash(data, hash.good_pelosi_hash, QUOTE)
 
+    print("Bad Probed Title:")
     test_probed_hash(data, hash.bad_pelosi_hash, TITLE)
+    print("Good Probed Title:")
     test_probed_hash(data, hash.good_pelosi_hash, TITLE)
 
+    print("Bad Probed Quote:")
     test_probed_hash(data, hash.bad_pelosi_hash, QUOTE)
+    print("Good Probed Quote:")
     test_probed_hash(data, hash.good_pelosi_hash, QUOTE)
 
 def linked_hash(movies, function, key):
@@ -1404,7 +1412,7 @@ def probed_hash(movies, function, key):
     collisions = 0
 
     for movie in movies:
-        collisions += probe.insert(function(movie[key]))
+        collisions += probe.insert(function(movie[key]), movie)
     return probe.get_list(), collisions
 
 def wasted_space(arr):
